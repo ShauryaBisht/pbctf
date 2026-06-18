@@ -179,7 +179,6 @@ export async function PUT(request: NextRequest) {
       { new: true },
     );
 
-    
     if (!updatedUser) {
       return NextResponse.json(
         { message: "Failed to update status" },
